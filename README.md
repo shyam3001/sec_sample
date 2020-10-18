@@ -7,4 +7,4 @@ Please ensure:
 * They are all accessible from the terminal (PATHS are set)
 * JAVA_HOME is set to the JDK in your operating system
 
-`./gradlew run`
+`./gradlew run --console=plain`

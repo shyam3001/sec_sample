@@ -44,6 +44,7 @@ run {
     
     dependsOn debugLibTask
     systemProperty 'java.library.path', debugLibTask.linkedFile.get().asFile.parentFile
+    standardInput System.in
 }
 
 startScripts {

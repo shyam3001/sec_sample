@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Scanner;
 
 public class ExampleJavaApp
 {
@@ -9,6 +10,11 @@ public class ExampleJavaApp
 
     public static void main(String[] args)
     {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter something: ");
+        String s = in.next();
+        System.out.println("you entered : " + s);
+
         hello();
         sum(5);
 
