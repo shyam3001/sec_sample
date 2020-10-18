@@ -1,2 +1,2 @@
 rootProject.name = 'jni_gradle_helloworld'
-include 'java_app', 'c_library'
+include 'java_app', 'c_library', 'java_subproject'

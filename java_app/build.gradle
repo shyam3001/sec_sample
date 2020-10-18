@@ -24,6 +24,8 @@ dependencies {
     // Instead, this dependency simply causes our C library file to be included as part of the Java 
     // application's distributable .zip file. We then have to do some setting up, in 'run{}' and 
     // 'startScripts{}', to ensure that Java will be able to load the library.
+
+    implementation project(':java_subproject')
 }
 
 application {

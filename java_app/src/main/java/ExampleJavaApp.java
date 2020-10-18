@@ -1,4 +1,6 @@
 package org.example;
+
+import org.example.dependency.*;
 import java.util.Scanner;
 
 public class ExampleJavaApp
@@ -20,6 +22,8 @@ public class ExampleJavaApp
 
         int n = product(5);
         System.out.println(n);
+
+        ExampleDependency.exampleMethod();
     }
 
     public static native void hello();
