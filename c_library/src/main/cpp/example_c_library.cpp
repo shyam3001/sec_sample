@@ -10,4 +10,13 @@ extern "C"
     {
         printf("Hello world\n");
     }
+
+	JNIEXPORT void JNICALL Java_org_example_ExampleJavaApp_sum(JNIEnv *env, jclass cls, jint n)
+    {
+    	int i=0, sum=0;
+    	for (i=1; i<=n; i++) {
+    		sum = sum + i;
+    	}
+    	printf("%d\n", sum);
+    }    
 }
