@@ -18,5 +18,14 @@ extern "C"
     		sum = sum + i;
     	}
     	printf("%d\n", sum);
+    }
+
+    JNIEXPORT jint JNICALL Java_org_example_ExampleJavaApp_product(JNIEnv *env, jclass cls, jint n)
+    {
+    	int i=0, product=1;
+    	for (i=1; i<=n; i++) {
+    		product = product * i;
+    	}
+    	return product;
     }    
 }

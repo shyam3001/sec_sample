@@ -11,8 +11,12 @@ public class ExampleJavaApp
     {
         hello();
         sum(5);
+
+        int n = product(5);
+        System.out.println(n);
     }
 
     public static native void hello();
     public static native void sum(int n);
+    public static native int product(int n);
 }
