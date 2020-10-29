@@ -12,21 +12,25 @@ public class ExampleJavaApp
 
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
-        System.out.println("enter something: ");
-        String s = in.next();
-        System.out.println("you entered : " + s);
+        // Scanner in = new Scanner(System.in);
+        // System.out.println("enter something: ");
+        // String s = in.next();
+        // System.out.println("you entered : " + s);
 
-        hello();
-        sum(5);
+        // hello();
+        // sum(5);
 
-        int n = product(5);
-        System.out.println(n);
+        // int n = product(5);
+        // System.out.println(n);
 
-        ExampleDependency.exampleMethod();
+        // ExampleDependency.exampleMethod();
+
+        ExampleJavaApp app = new ExampleJavaApp();
+        System.out.println(app.plugNameTests());
     }
 
     public static native void hello();
     public static native void sum(int n);
     public static native int product(int n);
+    public native String plugNameTests();    
 }

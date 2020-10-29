@@ -27,5 +27,12 @@ extern "C"
     		product = product * i;
     	}
     	return product;
+    }
+
+    JNIEXPORT jstring JNICALL Java_org_example_ExampleJavaApp_plugNameTests(JNIEnv *env, jobject obj)
+    {
+        const char *expr = "Plugin JNI_C Loading...";
+        jstring result = env->NewStringUTF(expr);
+        return result;
     }    
 }
